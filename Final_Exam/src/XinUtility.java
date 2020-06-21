@@ -3,9 +3,17 @@ import java.io.*;
 import java.util.*;
 
 public class XinUtility {
-    private static final List<String> texts = new ArrayList<>();
-
-    public static void ReadNewTxt(final String path)
+    private static XinUtility instance;
+    private  final List<String> texts = new ArrayList<>();
+    public static XinUtility instance()
+    {
+        if(instance == null)
+        {
+            instance = new XinUtility();
+        }
+        return instance;
+    }
+    private void XinUtility(final String path)
     {
         final FileInputStream  file;
         final BufferedReader  bufferFile;
@@ -25,7 +33,7 @@ public class XinUtility {
             e.printStackTrace();
         }
     }
-    public static String getString(final int index) 
+    public String getString(final int index) 
     {
         return texts.get(index);
     }
