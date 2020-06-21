@@ -3,6 +3,7 @@ import java.io.*;
 import java.util.*;
 
 public class XinUtility {
+    public final String path = "release/String.txt";
     private static XinUtility instance;
     private  final List<String> texts = new ArrayList<>();
     public static XinUtility instance()
@@ -13,7 +14,7 @@ public class XinUtility {
         }
         return instance;
     }
-    private void XinUtility(final String path)
+    private void XinUtility()
     {
         final FileInputStream  file;
         final BufferedReader  bufferFile;
