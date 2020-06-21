@@ -1,6 +1,6 @@
 
 public class Minions extends Monster {
-	String[] names = {"¤p­ô¥¬ªL","¥vµÜ©i","¤p¾uÅ\","¤ì§¯","½v±aªÎªÎ","¤T²´³¹³½"};
+	String[] names = {"ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½L","ï¿½vï¿½Ü©i","ï¿½pï¿½uï¿½","ï¿½ì§¯","ï¿½vï¿½aï¿½Îªï¿½","ï¿½Tï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"};
 	public Minions() {
 		setName(names[floor]);
 		setHealth(30);
